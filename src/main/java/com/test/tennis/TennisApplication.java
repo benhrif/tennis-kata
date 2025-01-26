@@ -13,8 +13,8 @@ public class TennisApplication {
 		Player playerA = new Player();
 		Player playerB = new Player();
 		TennisGame game = new TennisGame(playerA, playerB);
-		game.updateScore("ABABAA");       
-		game.updateScore("ABABABABABABABB");
+		
+		game.lunch(args[0]);       
 	}
 
 }

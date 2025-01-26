@@ -12,11 +12,17 @@ public class TennisGame implements Game {
 		this.playerB = playerB;    
 	
 	}
+	
+	public void lunch(String input) {
+		
+		InputValidator.validate(input);
+		
+		updateScore(input);
+	}
 
 	@Override
 	public void updateScore(String input) {
 		
-		InputValidator.validate(input);
 		
 		for (char c : input.toCharArray()) {
 			if (c == 'A') {
