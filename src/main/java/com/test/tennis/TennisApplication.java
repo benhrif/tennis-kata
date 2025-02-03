@@ -10,11 +10,10 @@ public class TennisApplication {
 		
 		SpringApplication.run(TennisApplication.class, args);
 		
-		Player playerA = new Player();
-		Player playerB = new Player();
-		TennisGame game = new TennisGame(playerA, playerB);
+		TennisGame game = new TennisGame(new Player(), new Player(), new ScoreCalculator(), new ScoreDisplay());
 		
-		game.lunch(args[0]);       
+		game.launch(args[0]);   
+		//game.launch("ABAAA");   
 	}
 
 }

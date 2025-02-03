@@ -1,7 +1,10 @@
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/Game.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/InputValidator.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/Player.java
+/Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/PlayerIdentifier.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/PlayerState.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/Score.java
+/Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/ScoreCalculator.java
+/Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/ScoreDisplay.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/TennisApplication.java
 /Users/oussamabenhrif/eclipse-workspace/TennisKataApp/src/main/java/com/test/tennis/TennisGame.java
