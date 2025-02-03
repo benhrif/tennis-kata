@@ -3,10 +3,10 @@ package com.test.tennis;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ScoreDisplay {
+public class ScoreDisplay{
 
     void displayScore(TennisGame game) {
-    	if (finishedGame(game)) {
+    	if (game.finishedGame()) {
     		displayWinner(game);
             game.resetGame();
         }
@@ -16,7 +16,8 @@ public class ScoreDisplay {
     }
 
     public void displayWinner(TennisGame game) {
-        System.out.println(getWinner(game));
+    	if(game.getPlayerA().getState() == PlayerState.WINNER) System.out.println( "Player A wins the game");
+    	else System.out.println ("Player B wins the game");
     }
     
     String printScore(TennisGame game) {
@@ -38,13 +39,4 @@ public class ScoreDisplay {
         }
     }
     
-    private String getWinner(TennisGame game) {
-         if(game.getPlayerA().getState() == PlayerState.WINNER) return "Player A wins the game";
-         if(game.getPlayerB().getState() == PlayerState.WINNER) return "Player B wins the game";
-         return "";
-    }
-    
-    private boolean finishedGame(TennisGame game) {
-		return game.getPlayerA().getState() == PlayerState.WINNER || game.getPlayerB().getState() == PlayerState.WINNER;
-	}
 }

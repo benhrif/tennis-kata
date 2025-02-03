@@ -73,4 +73,8 @@ class TennisGame implements Game {
 	public ScoreCalculator getScoreCalculator() {
 		return scoreCalculator;
 	}
+	
+	boolean finishedGame() {
+		return playerA.getState() == PlayerState.WINNER || playerB.getState() == PlayerState.WINNER;
+	}
 }

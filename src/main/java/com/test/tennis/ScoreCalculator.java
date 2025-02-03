@@ -3,7 +3,7 @@ package com.test.tennis;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ScoreCalculator {
+public class ScoreCalculator implements Score{
 
     private int score = 0;
 
